@@ -1,1 +1,1 @@
-This directory comtains all python projects 
+This repository contains all oython related projects

@@ -1,1 +1,1 @@
-This repository contains all oython related projects
+This repository contains all python related projects

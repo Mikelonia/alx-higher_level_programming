@@ -4,7 +4,7 @@
 --#!/bin/bash
 
 --# Get the database name as an argument
---database="$1"
+database="$1"
 
 --# SQL query to create the table
 query="CREATE TABLE IF NOT EXISTS first_table (

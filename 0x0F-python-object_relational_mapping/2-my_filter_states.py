@@ -14,11 +14,11 @@ def filter_states():
     state_name = sys.argv[4]
 
     # Connect to the database
-    db = MySQLdb.connect(user=username, passwd=password, db=database)
+    db = MySQLdb.connect(host="localhost", port=3306, user=username, passwd=password, db=database)
     cursor = db.cursor()
 
     # Execute the query to filter states by name
-    query = "SELECT * FROM states WHERE BINARY name = %s"
+    query = "SELECT * FROM states WHERE BINARY name = %s ORDER BY id ASC"
     cursor.execute(query, (state_name,))
 
     # Fetch and print the matching rows

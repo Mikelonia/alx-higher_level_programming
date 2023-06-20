@@ -22,7 +22,7 @@ def filter_states():
 
     # Fetch all the rows and filter only 'New York' and 'Nevada'
     rows = cur.fetchall()
-    filtered_rows = [(id, name) for id, name in rows if name == 'New York' or name == 'Nevada']
+    filtered_rows = [(id, name) for id, name in rows if id in (4,5) and name == 'New York' or id in (4,5) and name == 'Nevada']
     for row in filtered_rows:
         print(row)
 

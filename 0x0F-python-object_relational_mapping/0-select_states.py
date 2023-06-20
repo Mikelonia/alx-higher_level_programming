@@ -12,3 +12,6 @@ if __name__ == "__main__":
     c = db.cursor()
     c.execute("SELECT * FROM `states` LIMIT 5")
     [print(state) for state in c.fetchall()]
+    # Close the cursor and database connection
+    c.close()
+    db.close()
